@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Accessible UI Auditor</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.7.2/axe.min.js"></script>
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Accessible UI Auditor</h1>
+<p>Automated accessibility testing tool</p>
+</header>
+
+<section class="input-section">
+
+<textarea id="htmlInput" placeholder="Paste HTML code here..."></textarea>
+
+<button id="scanBtn">Run Accessibility Scan</button>
+
+</section>
+
+<section class="dashboard">
+
+<div class="card">
+<h3>Accessibility Score</h3>
+<p id="score">--</p>
+</div>
+
+<div class="card">
+<h3>Total Issues</h3>
+<p id="issueCount">0</p>
+</div>
+
+<div class="card">
+<h3>Critical Issues</h3>
+<p id="criticalCount">0</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Accessibility Report</h2>
+
+<div id="report"></div>
+
+</section>
+
+<footer>
+<button id="downloadBtn">Download Report</button>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
